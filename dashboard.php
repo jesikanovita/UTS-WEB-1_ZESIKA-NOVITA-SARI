@@ -35,7 +35,7 @@ for ($i = 0; $i < $jumlah_transaksi_acak; $i++) {
         'kode' => $barang['kode'],
         'nama' => $barang['nama'],
         'harga' => $barang['harga'],
-        'jumlah' => $jumlah_beli,
+        'jumlah' => $jumlah,
     ];
 }
 ?>
@@ -85,7 +85,7 @@ for ($i = 0; $i < $jumlah_transaksi_acak; $i++) {
             </thead>
             <tbody>
                 <?php
-                $no = 1;
+                $no = 1; 
                 // Commit 7: Gunakan foreach untuk menampilkan detail pembelian.
                 foreach ($pembelian as $item) {
                     // Commit 7: Hitung total harga per item
